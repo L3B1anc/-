@@ -92,7 +92,7 @@ if __name__ == '__main__':
 	startdate=getarg(sys.argv[1:])
 	data=payload(startdate,page)
 	page=page_info(data)
-	for i in range(2,page):
+	for i in range(2,page+1):
 		data1=payload(startdate,i)
 		dic_info(data1)
 		output(list1)
